@@ -3,20 +3,27 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import appRoutes from './app.routes';
+
 import { AppComponent } from './app.component';
 import { BindingComponent } from './binding/binding.component';
+
+import { StateService } from './state.service';
+import { CoolComponent } from './cool/cool.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BindingComponent
+    BindingComponent,
+    CoolComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    appRoutes
   ],
-  providers: [],
+  providers: [StateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
