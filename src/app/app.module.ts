@@ -10,12 +10,14 @@ import { BindingComponent } from './binding/binding.component';
 
 import { StateService } from './state.service';
 import { CoolComponent } from './cool/cool.component';
+import { MyHighlightDirective } from './my-highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     BindingComponent,
-    CoolComponent
+    CoolComponent,
+    MyHighlightDirective
   ],
   imports: [
     BrowserModule,

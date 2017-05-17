@@ -8,4 +8,6 @@ const routes: Routes = [
   { path: 'cool', component: CoolComponent }
 ];
 
-export default RouterModule.forRoot(routes);
+const Routing = RouterModule.forRoot(routes);
+
+export default Routing;
